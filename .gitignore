@@ -1,0 +1,11 @@
+# Ignore VSCode settings
+.vscode
+
+# Ignore Python caches
+*.pyc
+
+# Ignore build files
+build
+
+# Ignore batch files
+*.bat
