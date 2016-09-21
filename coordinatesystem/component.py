@@ -43,9 +43,11 @@ class Point2D:
 
         :param angle: Angle in radians.
         """
+        cosang = cos(angle)
+        sinang = sin(angle)
         temp = self.x
-        self.x = (self.x * cos(angle)) + (self.y * sin(angle))
-        self.y = (-temp * sin(angle)) + (self.y * cos(angle))
+        self.x = (self.x * cosang) + (self.y * sinang)
+        self.y = (-temp * sinang) + (self.y * cosang)
 
     def offset(self, xoffset, yoffset):
         """
